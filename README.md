@@ -317,7 +317,7 @@ cp .env.example .env
 npm run dev          # sobe a API (porta 8787) e o Vite (porta 4173)
 ```
 
-Abra `http://localhost:4173`.
+Abra `https://posvendas.grupokmr.com.br/`.
 
 Para navegar sem as credenciais do Zoho, ligue os modos de demonstração no `.env`:
 
