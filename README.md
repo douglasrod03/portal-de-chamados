@@ -307,37 +307,6 @@ e estão cobertas por testes.
 └── catalyst-pipelines.yml              # pipeline de CI/CD
 ```
 
-## Como executar localmente
-
-Pré-requisito: Node.js 18 ou mais recente.
-
-```bash
-npm install
-cp .env.example .env
-npm run dev          # sobe a API (porta 8787) e o Vite (porta 4173)
-```
-
-Abra `https://posvendas.grupokmr.com.br/`.
-
-Para navegar sem as credenciais do Zoho, ligue os modos de demonstração no `.env`:
-
-```dotenv
-AUTH_DEMO_MODE=true       # libera um usuário fixo, sem login
-WARRANTY_DEMO_MODE=true   # simula as notas fiscais; na Garantia, consulte a série DEMO2026
-```
-
-Os módulos que gravam no Zoho Creator precisam das credenciais OAuth no `.env`. O
-`.env.example` traz todas as variáveis comentadas.
-
-| Comando | O que faz |
-| --- | --- |
-| `npm run dev` | API e front juntos, com recarga automática |
-| `npm test` | testes do servidor |
-| `npm run lint` | ESLint em todo o projeto |
-| `npm run typecheck` | checagem de tipos do front e da configuração |
-| `npm run build` | checagem de tipos e build de produção |
-| `npm start` | servidor de produção |
-
 ---
 
 Desenvolvido por **Douglas Soares**.
